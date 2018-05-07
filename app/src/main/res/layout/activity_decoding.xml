@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="com.example.runge.PictureSteganography.DecodingActivity"
+                android:background="@color/background">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/statusDecodingText"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:shadowColor="@color/white"
+            android:text="算法1"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="算法2"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="算法3"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"/>
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/decodingImageView"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Decode"
+    android:id="@+id/decodeButton"
+    android:onClick="decodeClicked"
+    android:layout_alignTop="@+id/chooseAnotherPicButton"
+    android:layout_alignRight="@+id/decodingImageView"
+    android:layout_alignEnd="@+id/decodingImageView" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Choose another pic"
+    android:id="@+id/chooseAnotherPicButton"
+    android:onClick="goBackFromDecoding"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Ready for decoding."
+    android:textSize="18dp"
+    android:paddingTop="5dp"
+    android:textColor="@color/font"
+    android:id="@+id/statusDecodingText"
+    android:layout_below="@+id/decodingImageView"
+    android:layout_centerHorizontal="true" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text=":("
+    android:textColor="#ffffff"
+    android:textSize="100dp"
+    android:id="@+id/errorDecodingText"
+    android:layout_alignBottom="@+id/decodingImageView"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="180dp"
+    android:visibility="invisible"/>
+</RelativeLayout>

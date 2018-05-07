@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">picture steganography</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="no_permission">系统禁止访问！</string>
+    <string name="no_choosed_pic">没有选中图片</string>
+    <string name="takepic">Take a picture or pick from gallery.</string>
+    <string name="titleapp"><![CDATA[>./Steganography]]></string>
+    <string name="desc_apptitle">Hide text into images.</string>
+    <string name="ready_enc">Ready for encoding.</string>
+    <string name="clear_button">Clear</string>
+    <string name="encode_button">Encode</string>
+    <string name="save_txt">Save .txt</string>
+    <string name="try_another_image">Try another image</string>
+</resources>

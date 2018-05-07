@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="280dp"
+              android:layout_height="fill_parent"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:background="#0000"
+              android:windowIsFloating="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@drawable/shape_select_pic"
+        >
+        <TextView
+            android:id="@+id/chooseText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/galleryButton"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Choose your source."
+            android:textColor="@color/font"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#CCCCCC"/>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/shape_select_pic"
+        android:id="@+id/tv_take_photo">
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="60dp"
+            android:src="@drawable/tackphoto"
+            android:paddingLeft="16dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:onClick="takePhoto"
+                android:text="拍照获取"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#CCCCCC"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_select_pic"
+            android:id="@+id/tv_phone_pic">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="60dp"
+                android:src="@drawable/image_group"
+                android:paddingLeft="16dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:onClick="chooseFromGalleryForEncoding"
+                android:text="从相册中获取"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#CCCCCC"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_select_pic"
+            android:id="@+id/tv_phone_file">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_menu_filesmanage_white"
+                android:paddingLeft="16dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:onClick="chooseFile"
+                android:text="从文件中查找"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <!--TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#CCCCCC"/>
+
+        <TextView
+            android:id="@+id/tv_phone_myfile"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="从文件中查找"
+            android:textColor="@color/white"
+            android:textSize="24sp"/-->
+    </LinearLayout>
+
+</LinearLayout>

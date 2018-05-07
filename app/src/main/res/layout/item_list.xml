@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+    <ImageView
+        android:id="@+id/tv_hitoryImageview"
+        android:layout_width="40dp"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:id="@+id/tv_useTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:text="未知"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_filename"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:paddingLeft="40dp"
+        android:text="名字"
+        android:textSize="25sp"/>
+    <TextView
+        android:id="@+id/tv_filepath"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:paddingLeft="40dp"
+        android:text="路径"
+        android:textSize="25sp"/>
+
+</RelativeLayout>
